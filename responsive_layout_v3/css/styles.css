@@ -23,20 +23,16 @@ ul {
 }
 p {
 	font-size: .95em;
-	margin-bottom: 1.8em;
+	margin-bottom: 1em;
 }
+
 h2,
 h3,
 a {
 	color: #093a58;
 }
-h2,
-h3 {
-	margin-top: 0;
-}
-a {
-	text-decoration: none;
-}
+
+
 img {
 	max-width: 100%;
 }
@@ -59,10 +55,8 @@ img {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
-}
-.main-nav a {
 	font-size: .95em;
-	color: #3acec2;
+	color: grey;
 	text-transform: uppercase;
 }
 .main-nav a:hover {
@@ -80,15 +74,31 @@ img {
 	text-align: center;
 }
 .Profile {
-	color: #fff;
-	background: #3acec2;
-	padding: 3.2em 0;
-	margin-bottom: 48px;
+	color: rgb(3, 3, 3);
+	background: rgb(207, 204, 204);
+	padding: 2em 1em;
+	margin-bottom: 70px;
 }
-.Marketing {
-	padding-right: 1em;
-	padding-left: 1em;
+
+h2, h3 {
+    text-align: center;
 }
+
+h3 {
+    margin: 0em;
+}
+
+.Projects {
+	padding: 0.5em;
+    text-align: center;	
+}
+
+.Projects p {
+    padding: 0em 0em 2em 0em;
+    margin-top: 0em;
+}
+
+
 .main-footer {
 	background: #d9e4ea;
 	padding: 2em 0;
@@ -110,3 +120,34 @@ img {
 /* ================================= 
   Media Queries
 ==================================== */
+
+@media (min-width: 768px) {
+    
+    .main-header, .main-nav, .Profile {
+        display: flex;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+
+    .logo {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+
+}
